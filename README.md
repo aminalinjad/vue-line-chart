@@ -1,7 +1,48 @@
-# Vue 3 + Vite
+# Vue3 Chart Line
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Custom Vue.js line chart is a customizable and interactive chart component built using Vue.js.
+It allows users to display data in a visually appealing way using lines to connect data points.
 
-## Recommended IDE Setup
+[![npm version](https://img.shields.io/npm/v/@alireza-ab/vue-persian-datepicker)](https://www.npmjs.com/package/@alireza-ab/vue-persian-datepicker)
 
-- [VS Code](https://code.visualstudio.com/) + [Vue - Official](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (previously Volar) and disable Vetur
+## Features
+- **Easy to use**
+- **svg** support
+- **Vue3** support
+- **Animation**
+- **Lightweight**
+
+## Documentation
+
+![vue3 line chart](https://i.postimg.cc/SnhDxCHp/Screenshot-from-2024-06-10-18-01-51.png)
+
+### Install
+
+```shell
+npm i vue-line-chart
+yarn i vue-line-chart
+```
+
+### Usage
+
+```js
+<script setup>
+  import {chart} from "vue-line-chart"
+</script>
+```
+
+```html
+<chart/>
+```
+
+### props
+| Prop Name    | Description                      | Default     | Type      |
+|--------------|----------------------------------|-------------|-----------|
+| points | List of dots that draw the chart | [...]       | [Number]  |
+| bgColor | Background color                 | "#e71f1f66" | String    |
+| lineColor |  color of the line            | "#e71f1f"          | String |
+| strokeWidth |  stroke size of the line      | 2           | Number |
+
+## License
+
+Vue Line Chart is available under the [MIT](https://opensource.org/licenses/MIT) license.
