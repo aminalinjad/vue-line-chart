@@ -6,6 +6,16 @@
   "author": "aminalinejad",
   "keywords": ["vue3", "vue", "chart", "line-chart", "canvas", "svg"],
   "license": "ISC",
+  "files": ["dist"],
+  "main": "./dist/chart-component-lib.umd.cjs",
+  "module": "./dist/chart-component-lib.js",
+  "exports": {
+    ".": {
+      "import": "./dist/chart-component-lib.js",
+      "require": "./dist/chart-component-lib.umd.cjs"
+    },
+    "./style.css": "./dist/style.css"
+  },
   "type": "module",
   "scripts": {
     "dev": "vite",
