@@ -14,7 +14,7 @@ It allows users to display data in a visually appealing way using lines to conne
 
 ## Documentation
 
-![vue3 line chart](https://i.postimg.cc/SnhDxCHp/Screenshot-from-2024-06-10-18-01-51.png)
+![vue3 line chart](https://mail.google.com/mail/u/0/?ui=2&ik=e5a8c460d1&attid=0.1&permmsgid=msg-a:r9148528583803477043&th=19002a308ff98b56&view=fimg&realattid=f_lx93jzr00&disp=thd&attbid=ANGjdJ8Z2HZHq_dXVZjsgJ8ckc0_RM1G-sD3G66iivgcxHmJxR-tTgOtKUMniDzN5kQxBMgt749PvmuCobUY0vCPoBUsvVJEFUDqkLen7tSrncT840h2bd8R3_MDDTo&ats=2524608000000&sz=w180-h120-df-p-nu)
 
 ### Install
 
