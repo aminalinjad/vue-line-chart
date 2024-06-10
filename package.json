@@ -1,0 +1,22 @@
+{
+  "name": "vue-line-chart",
+  "description": "Simple HTML5 charts using the canvas element.",
+  "private": false,
+  "version": "0.0.1",
+  "author": "aminalinejad",
+  "keywords": ["vue3", "vue", "chart", "line-chart", "canvas", "svg"],
+  "license": "ISC",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.4.21"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.4",
+    "vite": "^5.2.0"
+  }
+}
