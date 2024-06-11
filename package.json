@@ -2,7 +2,7 @@
   "name": "vue-line-chart",
   "description": "Simple HTML5 charts using the canvas element.",
   "private": false,
-  "version": "0.2.3",
+  "version": "0.2.4",
   "author": "aminalinejad",
   "keywords": ["vue3", "vue", "chart", "line-chart", "canvas", "svg"],
   "license": "MIT",
