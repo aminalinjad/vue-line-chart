@@ -1,9 +1,15 @@
 <template>
   <svg :height="height" :width="width" xmlns="http://www.w3.org/2000/svg">
-    <polyline stroke-linecap="square" :points="`${generatedPoints}`"
-              :style="{fill:'none',stroke: props.lineColor,'stroke-width':props.strokeWidth}"/>
-
-    <polygon :fill="props.bgColor" :points="`0,${height} ${generatedPoints} ${width},${height}`"/>
+    <polyline class="animate" stroke-linecap="square" :points="`${generatedPoints}`"
+              :style="{fill:'none',stroke: props.lineColor,'stroke-width':props.strokeWidth}">
+    </polyline>
+    <defs>
+      <linearGradient gradientTransform="rotate(90)" id="MyGradient">
+        <stop offset="50%" :stop-color="props.bgColor"/>
+        <stop offset="100%" :stop-color="props.bgColor.substring(0, 7).concat('00')"/>
+      </linearGradient>
+    </defs>
+    <polygon fill="url(#MyGradient)" v-if="hasBg" :points="`0,${height} ${generatedPoints} ${width},${height}`"/>
   </svg>
 </template>
 
@@ -69,7 +75,6 @@ const props = defineProps({
       ],
     type: Array
   },
-
   bgColor: {
     default: "#e71f1f66",
     type: String
@@ -80,6 +85,10 @@ const props = defineProps({
   },
   strokeWidth: {
     default: 2
+  },
+  hasBg: {
+    default: true,
+    type: Boolean
   }
 })
 
@@ -88,17 +97,16 @@ const state = reactive({
 })
 
 const width = 200
-const height = 30
+const height = 50
 
 
 const generatedPoints = computed(() => {
   let gap = width / (state.normalizedPoints.length - 1)
-  console.log( state.normalizedPoints.length , gap)
   let str = ``
   firstPoint.value = state.normalizedPoints[0]
   lastPoint.value = state.normalizedPoints[state.normalizedPoints.length - 1]
   for (let index = 0; index < state.normalizedPoints.length; index++) {
-    str += ` ${index * gap},${height-state.normalizedPoints[index]}`
+    str += ` ${index * gap},${height - state.normalizedPoints[index]}`
   }
   return str
 })
@@ -116,5 +124,17 @@ minMaxNormalize()
 </script>
 
 <style scoped>
+.animate {
+  /* Stroke-dasharray property */
+  stroke-dasharray: 1800px;
+  stroke-dashoffset: 1800px;
+  animation: move 5s ease-in-out;
+  animation-fill-mode: forwards;
+}
 
+@keyframes move {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
 </style>

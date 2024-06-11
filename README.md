@@ -14,7 +14,7 @@ It allows users to display data in a visually appealing way using lines to conne
 
 ## Documentation
 
-![vue3 line chart](https://mail.google.com/mail/u/0/?ui=2&ik=e5a8c460d1&attid=0.1&permmsgid=msg-a:r9148528583803477043&th=19002a308ff98b56&view=fimg&realattid=f_lx93jzr00&disp=thd&attbid=ANGjdJ8Z2HZHq_dXVZjsgJ8ckc0_RM1G-sD3G66iivgcxHmJxR-tTgOtKUMniDzN5kQxBMgt749PvmuCobUY0vCPoBUsvVJEFUDqkLen7tSrncT840h2bd8R3_MDDTo&ats=2524608000000&sz=w180-h120-df-p-nu)
+![vue3 line chart](https://imgur.com/sFpPRdQ)
 
 ### Install
 
@@ -36,12 +36,13 @@ yarn i vue-line-chart
 ```
 
 ### props
-| Prop Name    | Description                      | Default     | Type      |
-|--------------|----------------------------------|-------------|-----------|
-| points | List of dots that draw the chart | [...]       | [Number]  |
-| bgColor | Background color                 | "#e71f1f66" | String    |
-| lineColor |  color of the line            | "#e71f1f"          | String |
-| strokeWidth |  stroke size of the line      | 2           | Number |
+| Prop Name   | Description                      | Default     | Type     |
+|-------------|----------------------------------|-------------|----------|
+| points      | List of dots that draw the chart | [...]       | [Number] |
+| bgColor     | Background color(just HEX)       | "#e71f1f66" | String   |
+| lineColor   | color of the line                | "#e71f1f"   | String   |
+| strokeWidth | stroke size of the line          | 2           | Number   |
+| hasBg       | Remove background color          | true        | Boolean  |
 
 ## License
 
