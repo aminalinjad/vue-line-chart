@@ -28,6 +28,8 @@ yarn i vue-line-chart
 ```js
 <script setup>
   import {chart} from "vue-line-chart"
+  /// to styling
+  import "vue-line-chart/style.css" 
 </script>
 ```
 

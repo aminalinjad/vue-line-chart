@@ -123,18 +123,6 @@ minMaxNormalize()
 
 </script>
 
-<style scoped>
-.animate {
-  /* Stroke-dasharray property */
-  stroke-dasharray: 1800px;
-  stroke-dashoffset: 1800px;
-  animation: move 5s ease-in-out;
-  animation-fill-mode: forwards;
-}
+<style>
 
-@keyframes move {
-  100% {
-    stroke-dashoffset: 0;
-  }
-}
 </style>
