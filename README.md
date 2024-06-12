@@ -46,6 +46,16 @@ yarn i vue-line-chart
 | strokeWidth | stroke size of the line          | 2           | Number   |
 | hasBg       | Remove background color          | true        | Boolean  |
 
+
+
+### Author
+
+**Amin Alinejad**
+
+* [GitHub Profile](https://github.com/aminalinjad)
+* [LinkedIn Profile](https://www.linkedin.com/in/aminalinjad/)
+
+
 ## License
 
 Vue Line Chart is available under the [MIT](https://opensource.org/licenses/MIT) license.

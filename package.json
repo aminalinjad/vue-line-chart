@@ -2,8 +2,15 @@
   "name": "vue-line-chart",
   "description": "Simple HTML5 charts using the canvas element.",
   "private": false,
-  "version": "0.2.4",
-  "author": "aminalinejad",
+  "homepage": "https://www.npmjs.com/package/vue-line-chart?activeTab=readme",
+  "version": "0.2.5",
+  "author": "Amin Alinejad",
+  "maintainers": [
+    {
+      "name": "Amin Alinejad",
+      "email": "amin.anzd@gmail.com"
+    }
+  ],
   "keywords": ["vue3", "vue", "chart", "line-chart", "canvas", "svg"],
   "license": "MIT",
   "files": ["dist"],
@@ -17,6 +24,7 @@
     "./style.css": "./dist/style.css"
   },
   "type": "module",
+  "sideEffects": false,
   "scripts": {
     "dev": "vite",
     "build": "vite build",
