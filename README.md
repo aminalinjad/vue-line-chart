@@ -3,8 +3,6 @@
 Custom Vue.js line chart is a customizable and interactive chart component built using Vue.js.
 It allows users to display data in a visually appealing way using lines to connect data points.
 
-[![npm version](https://img.shields.io/npm/v/@alireza-ab/vue-persian-datepicker)](https://www.npmjs.com/package/@alireza-ab/vue-persian-datepicker)
-
 ## Features
 - **Easy to use**
 - **svg** support
@@ -14,7 +12,7 @@ It allows users to display data in a visually appealing way using lines to conne
 
 ## Documentation
 
-![vue3 line chart](https://imgur.com/sFpPRdQ)
+![vue3 line chart](https://biaupload.com/do.php?imgf=org-3ed675533bc81.png)
 
 ### Install
 
